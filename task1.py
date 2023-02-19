@@ -7,9 +7,14 @@
 num = int(input("Введите трехзначное число:"))
 sum = 0
 
+if 99<num<1000:
+    while (num != 0):
+        sum = sum + num % 10
+        num = num // 10
+    print(f"Сумма цифр числа равна:{sum}")
 
-while (num != 0):
-    sum = sum + num % 10
-    num = num // 10
-    
-print(f"Сумма цифр числа равна:{sum}")
+else:
+    print("Ввели не трехзначное число. Введите трехзначное число")
+
+
+
